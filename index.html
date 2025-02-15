@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Shree SuperMart CRUD</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Shree SuperMart Inventory</h1>
+
+    <h2>All Items</h2>
+    <table>
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Quantity</th>
+                <th>Price</th>
+                <th>Image</th>
+                <th>Actions</th>
+            </tr>
+        </thead>
+        <tbody id="itemsTable"></tbody>
+    </table>
+
+    <h2>Add / Update Item</h2>
+    <div>
+        <input type="hidden" id="itemId">
+        <label>Name:</label> <input type="text" id="name">
+        <label>Quantity:</label> <input type="text" id="quantity">
+        <label>Price:</label> <input type="text" id="price">
+        <label>Image URL:</label> <input type="text" id="image">
+        <button id="saveBtn" onclick="addOrUpdateItem()">Save Item</button>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
